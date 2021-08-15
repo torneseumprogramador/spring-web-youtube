@@ -1,0 +1,40 @@
+<div th:replace="compartilhado/top"></div>
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Administradores</h1>
+        <p class="mb-4">
+            Aqui irá listar os administradores do meu sistema
+        </p>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Lista de administradores</h6>
+            </div>
+            <a href="/administradores/novo" class="btn btn-default" style="width:150px">Voltar</a>
+            <form method="POST" action="/administradores/criar">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="observacao">observacao</label>
+                    <textarea class="form-control" id="observacao" name="observacao" placeholder="Digite o nome"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+<div th:replace="compartilhado/baixo"></div>

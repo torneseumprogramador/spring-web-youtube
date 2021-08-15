@@ -13,6 +13,7 @@
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Lista de administradores</h6>
             </div>
+            <a href="/administradores/novo" class="btn btn-primary" style="width:150px">Novo</a>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -42,8 +43,8 @@
                                 <td th:text="${administrador.nome}"></td>
                                 <td th:text="${administrador.email}"></td>
                                 <td th:text="${administrador.senha}"></td>
-                                <td><a href="#" class="btn btn-warning">Alterar</td>
-                                <td><a href="#" class="btn btn-danger">Excluir</td>
+                                <td><a href="#" class="btn btn-warning">Alterar</a></td>
+                                <td><a href="#" class="btn btn-danger">Excluir</a></td>
                             </tr>
                         </tbody>
                     </table>
