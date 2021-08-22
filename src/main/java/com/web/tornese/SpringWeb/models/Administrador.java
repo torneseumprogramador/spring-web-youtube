@@ -3,8 +3,6 @@ package com.web.tornese.SpringWeb.models;
 import javax.persistence.*;
 
 import org.hibernate.annotations.Type;
-import org.springframework.beans.factory.annotation.Required;
-
 
 @Entity
 @Table(name = "administradores")
@@ -44,7 +42,7 @@ public class Administrador {
   }
 
   public String getSenha() {
-    return senha.substring(0, 3) + "****";
+    return this.senha;
   }
 
   public void setSenha(String senha) {
