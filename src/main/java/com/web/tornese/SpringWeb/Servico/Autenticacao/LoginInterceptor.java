@@ -16,9 +16,12 @@ public class LoginInterceptor implements HandlerInterceptor {
       (HttpServletRequest request, HttpServletResponse response, Object handler) 
       throws Exception {
       
-      if(CookieService.getCookie(request, "usuarioId") != null){
-         return true;
+      try{
+         if(CookieService.getCookie(request, "usuarioId") != null){
+            return true;
+         }
       }
+      catch(Exception erro) {}
       
       response.sendRedirect("/login");
       return false;
