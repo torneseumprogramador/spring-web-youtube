@@ -1,1 +1,1 @@
-./mvnw spring-boot:start
+USER=root PASSWORD=root DATABASE_URL='mysql://localhost:3306/SpringWebYoutube?useTimezone=true&serverTimezone=UTC' ./mvnw spring-boot:start
