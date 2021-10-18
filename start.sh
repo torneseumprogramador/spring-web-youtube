@@ -1,1 +1,13 @@
-USER=root PASSWORD=root DATABASE_URL='mysql://localhost:3306/SpringWebYoutube?useTimezone=true&serverTimezone=UTC' ./mvnw spring-boot:start
+
+export USER='bad3b77b0a262d'
+export PASSWORD='040e170e'
+export DATABASE_URL='mysql://us-cdbr-east-04.cleardb.com/heroku_7f94424f56f1693?reconnect=true'
+
+# ./mvnw spring-boot:run
+
+# docker run -d -p 8081:8080 
+
+docker run -e USER -e PASSWORD -e DATABASE_URL -p 8081:8080 --name crud-java-login didox/crud-java-login
+# docker run -d -e USER -e PASSWORD -e DATABASE_URL -p 8081:8080 --name crud-java-login didox/crud-java-login
+
+# docker start crud-java-login
