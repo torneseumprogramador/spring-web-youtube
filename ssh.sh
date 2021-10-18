@@ -1,1 +1,0 @@
-docker exec -it crud-java-login /bin/bash

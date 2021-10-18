@@ -11,10 +11,6 @@ COPY ${JAR_FILE} app.jar
 #     && rm -fr *
 # EXPOSE 8080
 
-# ENV USER='root'
-# ENV PASSWORD='root'
-# ENV DATABASE_URL='mysql://localhost:3306/SpringWebYoutube?useTimezone=true&serverTimezone=UTC'
-
 ENTRYPOINT ["java","-jar","/app.jar"]
 
 # ### Gerar o build do docker ###

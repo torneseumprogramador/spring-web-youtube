@@ -4,9 +4,6 @@ export DATABASE_URL='mysql://um_host_de_base.com/heroku_7f94424f56f1693?reconnec
 
 # ./mvnw spring-boot:run
 
-# docker run -d -p 8081:8080 
-
-docker run -e USER -e PASSWORD -e DATABASE_URL -p 8081:8080 --name crud-java-login didox/crud-java-login
-# docker run -d -e USER -e PASSWORD -e DATABASE_URL -p 8081:8080 --name crud-java-login didox/crud-java-login
-
-# docker start crud-java-login
+# docker run -e USER -e PASSWORD -e DATABASE_URL -p 8081:8080 --name crud-java-login didox/crud-java-login
+docker run -d -e USER -e PASSWORD -e DATABASE_URL -p 8081:8080 --name crud-java-login didox/crud-java-login
+docker start crud-java-login
