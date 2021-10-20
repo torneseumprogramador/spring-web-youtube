@@ -1,6 +1,7 @@
 #!/bin/bash -e
 # echo "Digite a tag que deseja para deploy"
 # read tag
+# git checkout tag
 # docker build -t "didox/crud-java-login:$tag" -f Dockerfile .
 
 #### Pegando ultima tag do git #####
