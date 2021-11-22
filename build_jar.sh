@@ -1,4 +1,1 @@
-export USER='root' 
-export PASSWORD='root' 
-
-mvn package
+mvn package -Dmaven.test.skip -DskipTests -Dmaven.javadoc.skip=true
