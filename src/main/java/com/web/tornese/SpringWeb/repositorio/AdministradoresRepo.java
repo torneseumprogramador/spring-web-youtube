@@ -11,4 +11,7 @@ public interface AdministradoresRepo extends CrudRepository<Administrador, Integ
 
   @Query(value="select * from administradores where email = :email and senha = :senha", nativeQuery = true)
   public Administrador Login(String email, String senha);
+  
+  @Query(value="select * from administradores where nome like %:nome% or email like %:email% ", nativeQuery = true)
+	public ArrayList<Administrador> findAllByNomeEmail(@Param("nome") String nome, @Param("email") String email);
 }
