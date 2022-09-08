@@ -1,1 +1,5 @@
-USER=root PASSWORD=root DATABASE_URL='mysql://localhost:3306/SpringWebYoutube?useTimezone=true&serverTimezone=UTC' ./mvnw spring-boot:start
+export USER=root
+export PASSWORD=root 
+export DATABASE_URL='localhost' 
+./mvnw package -Dmaven.test.skip
+java -jar target/*.jar

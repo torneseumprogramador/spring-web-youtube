@@ -3,11 +3,11 @@ package com.web.tornese.SpringWeb.Servico.Autenticacao;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.web.tornese.SpringWeb.Servico.CookieService;
-
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 // import org.springframework.web.servlet.ModelAndView;
+
+import com.web.tornese.SpringWeb.Servico.CookieService;
 
 @Component
 public class LoginInterceptor implements HandlerInterceptor {
