@@ -45,7 +45,7 @@ public class AdministradoresController {
     }
     catch(Exception err){ return "redirect:/administradores"; }
 
-    return "/administradores/editar";
+    return "administradores/editar";
   }
 
   @PostMapping("/administradores/{id}/atualizar")
